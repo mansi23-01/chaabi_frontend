@@ -1,0 +1,152 @@
+body {
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(181, 139, 181));
+    
+    /* background-repeat: no-repeat; */
+    /* background-size: 100%; */
+    /* height: 50%; */
+    /* background-position-y:35% ; */
+    /* filter: blur(8px); */
+}
+
+.heading {
+    text-align: center;
+    color: rgb(118, 71, 118);
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+    animation-iteration-count: infinite;
+
+}
+.heading2{
+    text-align: center;
+    margin-top: 5rem;
+}
+.heading2 span{
+  color: green;
+  text-decoration: underline;
+}
+.para{
+    text-align: center;
+    margin-top: 3rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: rgb(207, 32, 32);
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+
+.startbtn {
+    background-color: #000000;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.25rem;
+    cursor: pointer;
+    margin-top: 7rem;
+}
+
+
+.startbtn:hover {
+    background-color: rgb(42, 41, 41);
+    cursor: pointer;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .activity{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+} */
+
+.paragraph{
+    font: 30px Arial, sans-serif;
+    text-align: center;
+    position: absolute;
+    top: 15%;
+    left: 28%;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 4px;
+  }
+
+  img{
+    opacity: 0.5;
+  }
+
+  .results-popup{
+    text-align: center;
+    margin-top: 8rem;
+  }
+  .results-popup h2{
+    margin-top: 5rem;
+    font-size: 2rem;
+    color: darkblue;
+  }
+
+  .results-popup p{
+   font-family: monospace;
+   font-weight: 600;
+   font-size: 1rem;
+  }
+
+  
+  .results-popup button{
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    border-radius: 1rem;
+    padding: 10px;
+    background-color: black;
+    color: white;
+  }
+  .results-popup button:hover{
+    background-color: rgb(42, 41, 41);
+    cursor: pointer;
+  }
+
+  .input{
+    position: absolute;
+    top: 50%;
+    left: 28%;
+  }
+
+  .accuracy{
+    color: green;
+  }
+
+  .typing{
+    color: rgb(0, 74, 0);
+  }

@@ -150,3 +150,10 @@ input[type=text] {
   .typing{
     color: rgb(0, 74, 0);
   }
+
+  .footer{
+    color: rgb(40, 11, 50);
+    position: absolute;
+    bottom: 6%;
+    left: 42%;
+  }

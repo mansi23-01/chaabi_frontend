@@ -141,6 +141,7 @@ const TouchTypingApp = () => {
           <button onClick={handleRestart}>Restart</button>
         </div>
       )}
+      <footer>© Mansi Srivastav (12008464)</footer>
     </div>
   );
 };
